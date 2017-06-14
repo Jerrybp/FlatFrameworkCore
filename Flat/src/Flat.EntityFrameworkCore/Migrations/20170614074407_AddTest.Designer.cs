@@ -8,9 +8,10 @@ using Flat.EntityFrameworkCore;
 namespace Flat.EntityFrameworkCore.Migrations
 {
     [DbContext(typeof(FlatDBContext))]
-    partial class FlatDBContextModelSnapshot : ModelSnapshot
+    [Migration("20170614074407_AddTest")]
+    partial class AddTest
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("Npgsql:PostgresExtension:.uuid-ossp", "'uuid-ossp', '', ''")

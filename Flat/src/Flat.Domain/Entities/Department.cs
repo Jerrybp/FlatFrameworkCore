@@ -56,9 +56,15 @@ namespace Flat.Domain.Entities
         public int IsDeleted { get; set; }
 
         /// <summary>
+        /// 测试
+        /// </summary>
+        public string Test { get; set; }
+
+        /// <summary>
         /// 包含用户
         /// </summary>
         public virtual ICollection<User> Users { get; set; }
+
 
     }
 }
